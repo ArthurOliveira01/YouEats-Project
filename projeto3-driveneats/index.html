@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header">
+            <p id="DE">DrivenEats</p>
+            <p id="minutes">Sua comida em 6 minutos</p>
+        </header>
+        <div class="conteudo">
+
+            <p class="texto">Primeiro, seu prato</p>
+            <div class="itens">
+                <div data-test="dish" class="prato" onclick="selecionarTeriyaki()" id="teriyaki">
+                    <div class="imagem">
+                        <img src="images/frango-teriyaki.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Frango Teriyaki</p>
+                    <p class="descricao">Frango feito com o molho teriyaki</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 16,70</p>
+                        <ion-icon id="verificado-teriyaki" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dish" class="prato" onclick="selecionarBife()" id="bife">
+                    <div class="imagem">
+                        <img src="images/bife-acebolado.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Bife acebolado</p>
+                    <p class="descricao">Bife acebolado com arroz</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 19,70</p>
+                        <ion-icon id="verificado-bife" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dish" class="prato" onclick="selecionarHamburguer()" id="hamburguer">
+                    <div class="imagem">
+                        <img src="images/hamburguer.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Hamburguer</p>
+                    <p class="descricao">Com queijo alface e tomate</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 20,50</p>
+                        <ion-icon id="verificado-hamburguer" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dish" class="prato" onclick="selecionarPizza()" id="pizza">
+                    <div class="imagem">
+                        <img src="images/pizza.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Pizza</p>
+                    <p class="descricao">Pizza feita com calabresa e queijo</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 41,20</p>
+                        <ion-icon id="verificado-pizza" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <p class="texto">Agora, sua bebida</p>
+            <div class="itens">
+                <div data-test="drink" class="prato" onclick="selecionarGuarana()" id="guarana">
+                    <div class="imagem">
+                        <img src="images/guarana.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Guaraná</p>
+                    <p class="descricao">Guaraná 269 ml</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 4,50</p>
+                        <ion-icon id="verificado-guarana" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="drink" class="prato" onclick="selecionarAgua()" id="agua">
+                    <div class="imagem">
+                        <img src="images/agua.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Água mineral</p>
+                    <p class="descricao">Água 500 ml</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 2,70</p>
+                        <ion-icon id="verificado-agua" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="drink" class="prato" onclick="selecionarSuco()" id="suco">
+                    <div class="imagem">
+                        <img src="images/suco-laranja.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Suco de Laranja</p>
+                    <p class="descricao">Suco 350 ml</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 5,50</p>
+                        <ion-icon id="verificado-suco" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="drink" class="prato" onclick="selecionarCoca()" id="coca">
+                    <div class="imagem">
+                        <img src="images/coca.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Coca-Cola</p>
+                    <p class="descricao">Coca-Cola 1,5 L</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 8,00</p>
+                        <ion-icon id="verificado-coca" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <p class="texto">Por fim, sua sobremesa</p>
+            <div class="itens">
+                <div data-test="dessert" class="prato" onclick="selecionarBomba()" id="bomba">
+                    <div class="imagem">
+                        <img src="images/bomba.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Bomba de chocolate</p>
+                    <p class="descricao">Explosão de sabores</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 3,50</p>
+                        <ion-icon id="verificado-bomba" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dessert" class="prato" onclick="selecionarPave()" id="pave">
+                    <div class="imagem">
+                        <img src="images/pave.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Pavê</p>
+                    <p class="descricao">É pavê ou pacumê</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 31,30</p>
+                        <ion-icon id="verificado-pave" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dessert" class="prato" onclick="selecionarBolo()" id="bolo">
+                    <div class="imagem">
+                        <img src="images/bolo.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Bolo de chocolate</p>
+                    <p class="descricao">Muito chocolate</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 34,00</p>
+                        <ion-icon id="verificado-bolo" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div data-test="dessert" class="prato" onclick="selecionarSorvete()" id="sorvete">
+                    <div class="imagem">
+                        <img src="images/sorvete.jpg" alt="">
+                    </div>
+                    <p class="nome" data-test="item-name">Sorvete</p>
+                    <p class="descricao">Gelado e bom</p>
+                    <div class="preco">
+                        <p data-test="item-price">R$ 16,00</p>
+                        <ion-icon id="verificado-sorvete" class="off" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gambiarra"></div>
+        <div class="footer">
+            <button data-test="order-btn" class="fim" onclick="envio()" style="background-color: rgb(50, 183, 47);">Fechar pedido</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
